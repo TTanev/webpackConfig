@@ -1,7 +1,14 @@
-const elven = {
-  leather: 2,
-  iron: 1,
-  moonstone: 4,
+const elvenShieldRecipe = {
+  leatherStrips: 2,
+  ironIngot: 1,
+  refinedMoonstone: 4,
 }
 
-console.log(elven)
+const elvenGauntletsRecipe = {
+  ...elvenShieldRecipe,
+  leather: 1,
+  refinedMoonstone: 4,
+}
+
+console.log(elvenShieldRecipe)
+console.log(elvenGauntletsRecipe)
